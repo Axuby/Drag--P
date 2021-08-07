@@ -5,5 +5,10 @@ class Project {
     constructor() {
         this.templateElement = <HTMLTemplateElement> document.getElementById('project-input')!
         this.hostElement =  <HTMLDivElement> document.getElementById('app')!
+   
+        const importNode = document.importNode(this.templateElement.content,true)
     }
+
+
+    
 }
