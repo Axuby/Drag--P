@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Manager</title>
     <link rel="stylesheet" href="app.css">
-    <script src="src/app.js"></script>
+    <script src="dists/app.js" defer></script>
 </head>
 <body>
     
@@ -26,7 +26,7 @@
           <label for="people">People</label>
           <input type="number" id="people" step="1" min="0" max="10" />
         </div>
-        <button type="submit">ADD PROJECT</button>
+        <button type="submit" id="add-Project">ADD PROJECT</button>
       </form>
     </template>
     <template id="single-project">
@@ -41,5 +41,11 @@
       </section>
     </template>
     <div id="app"></div>
+    <script>
+      const addProject = document.getElementById('add-Project').onclick('',(event)=> {
+        console.log(event)
+        event.value.push('')
+      })
+    </script>
   </body>
 </html>
