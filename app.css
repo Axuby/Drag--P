@@ -81,9 +81,11 @@ button:active {
   background: #a80041;
   border-color: #a80041;
 }
+/* 
 
-
-
+.form{
+  width: 96%;
+} */
 
 .projects {
   margin: 1rem;
